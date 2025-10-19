@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タイムアウト区切りの定点手書き記録システム
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>タイムアウト区切りの定点手書き記録システム</h1>
+    
+    <div class="settings-area">
+        <label for="timeout-input">タイムアウト(ミリ秒):</label>
+        <input type="number" id="timeout-input" value="500" min="100">
+        <button id="sound-toggle-button">音ON</button>
+        <button id="save-json-button">JSON保存</button>
+        <button id="save-png-button">PNG保存</button>
+        <button id="clear-button">全消去</button>
+    </div>
+
+    <h2>入力エリア</h2>
+    <canvas id="input-canvas"></canvas>
+
+    <h2>出力エリア</h2>
+    <div id="final-sentence-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

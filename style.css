@@ -1,0 +1,88 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.settings-area {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* ★★★ ここからスタイルを追加・修正 ★★★ */
+.settings-area button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.settings-area label,
+.settings-area input {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#save-json-button { background-color: #007bff; }
+#save-json-button:hover { background-color: #0056b3; }
+
+#save-png-button { background-color: #28a745; }
+#save-png-button:hover { background-color: #1e7e34; }
+
+#clear-button { background-color: #dc3545; }
+#clear-button:hover { background-color: #c82333; }
+
+#sound-toggle-button { background-color: #6c757d; }
+#sound-toggle-button:hover { background-color: #5a6268; }
+
+button.off {
+    background-color: #ccc;
+    color: #666;
+}
+/* ★★★ ここまで ★★★ */
+
+
+#input-canvas {
+    background-color: white;
+    border: 2px solid black;
+    cursor: crosshair;
+    touch-action: none;
+}
+
+#final-sentence-container {
+    width: 880px;
+    max-width: 95vw;
+    min-height: 100px;
+    border: 2px dashed #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 4px;
+}
+
+#final-sentence-container canvas {
+    border: 1px solid #ddd;
+}
+
